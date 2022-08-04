@@ -20,15 +20,15 @@ const Popular = () => {
     if (films === null) {
         return(
             <>
-            <h1>Popular</h1>
-            <h2>Loading</h2>
+            <h1>POPULAR</h1>
+            <h2>LOADING</h2>
       
             </>
         )
     }else{
     return ( 
         <>
-        <h1>Popular</h1>
+        <h1>POPULAR</h1>
         <div className='container'>
         {films.results.map((film,i) => {
             return(

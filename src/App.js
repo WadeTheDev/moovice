@@ -27,10 +27,10 @@ const App = () => {
   return(
     <BrowserRouter>
     <header>
-        <h4><Link to='/'>Home</Link></h4>
-        <h4><Link to='/weekly'>Weekly</Link></h4>
-        <h4><Link to='/popular'>Popular</Link></h4>
-        <h4><Link to='/favorites'>Favorites</Link></h4>
+        <h4><Link className='head' to='/'>Moovice</Link></h4>
+        <h4><Link className='head' to='/weekly'>Weekly</Link></h4>
+        <h4><Link className='head' to='/popular'>Popular</Link></h4>
+        <h4><Link className='head' to='/favorites'>Favorites</Link></h4>
     </header>
     <Routes>
       <Route path='/' element={<Home />}/>
