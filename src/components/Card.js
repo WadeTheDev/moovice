@@ -7,12 +7,13 @@ const Card = (props) =>{
         if (stringFavouritesId) {
             favoritesIds  = JSON.parse(stringFavouritesId)
         }
+        if (!favoritesIds.includes(props.film.id)) {
+            favoritesIds.push(props.film.id)
+            stringFavouritesId = JSON.stringify(favoritesIds)
+            localStorage.setItem('favoritesIds', stringFavouritesId)
+          }
 
-        favoritesIds.push(props.film.id)
-        stringFavouritesId = JSON.stringify(favoritesIds)
-        localStorage.setItem('favoritesIds', stringFavouritesId)
-
-        console.log(favoritesIds)
+        // console.log(favoritesIds)
     }
     return ( 
         <div className="card">

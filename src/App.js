@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound';
 const App = () => {
 
   const [films, setfilms] = useState(null)
+  console.log(films)
 
   useEffect(() => {
       filmsData()
@@ -21,16 +22,18 @@ const App = () => {
       const response = await request.json()
       setfilms(response)
   }
-  console.log(films)
+  // console.log(films)
 
 
   return(
     <BrowserRouter>
     <header>
-        <h4><Link className='head' to='/'>Moovice</Link></h4>
+        <h4><Link className='head title-head' to='/'>MOOVICE</Link></h4>
+      <div>
         <h4><Link className='head' to='/weekly'>Weekly</Link></h4>
         <h4><Link className='head' to='/popular'>Popular</Link></h4>
         <h4><Link className='head' to='/favorites'>Favorites</Link></h4>
+        </div>
     </header>
     <Routes>
       <Route path='/' element={<Home />}/>
