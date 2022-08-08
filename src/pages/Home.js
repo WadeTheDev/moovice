@@ -22,16 +22,16 @@ const Home = () => {
 
     const setMovies = async () => {
         
-        const topRated = await fetchMovies(`https://api.themoviedb.org/3/movie/top_rated?api_key=d807289972eb3bf953404dbfeb6c7956`)
+        const topRated = await fetchMovies(`https://api.themoviedb.org/3/movie/top_rated?api_key=d807289972eb3bf953404dbfeb6c7956&language=en-US`)
         setTopRatedMovies(topRated.results)
 
-        const nowPlaying = await fetchMovies(`https://api.themoviedb.org/3/movie/now_playing?api_key=d807289972eb3bf953404dbfeb6c7956`)
+        const nowPlaying = await fetchMovies(`https://api.themoviedb.org/3/movie/now_playing?api_key=d807289972eb3bf953404dbfeb6c7956&language=en-US`)
         setNowplayingMovies(nowPlaying.results)
 
-        const upcoming = await fetchMovies(`https://api.themoviedb.org/3/movie/upcoming?api_key=d807289972eb3bf953404dbfeb6c7956`)
+        const upcoming = await fetchMovies(`https://api.themoviedb.org/3/movie/upcoming?api_key=d807289972eb3bf953404dbfeb6c7956&language=en-US`)
         setUpcomingMovies(upcoming.results)
 
-        const latest = await fetchMovies(`https://api.themoviedb.org/3/movie/latest?api_key=d807289972eb3bf953404dbfeb6c7956`)
+        const latest = await fetchMovies(`https://api.themoviedb.org/3/movie/latest?api_key=d807289972eb3bf953404dbfeb6c7956&language=en-US`)
         setLatestMovies(latest)
     }
     console.log(latestMovies)
