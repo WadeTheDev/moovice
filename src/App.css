@@ -143,6 +143,13 @@ h1{
   font-weight: 800;
   font-size: 20px;
 }
+
+h6{
+  width: 100%;
+  font-size: 30px;
+  padding-left: 50px;
+  color: black;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

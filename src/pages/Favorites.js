@@ -31,8 +31,6 @@ const Favorites = (props) => {
     return response
   }
 
-    console.log(movies);
-
     return( 
         <>
         <h1>Favorites</h1>
